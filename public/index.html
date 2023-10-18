@@ -2,133 +2,184 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IHC - Almanya İşçi Alımı</title>
-  <meta name="Description" content="Almanya İşçi Alımı - Hangi Meslekler - 2023 Almanya İşçi Alımı">
-  <link rel="shortcut icon" href="/public/images/ihcicon.png">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHC - Almanya İşçi Alımı</title>
+    <meta name="Description" content="Almanya İşçi Alımı - Hangi Meslekler - 2023 Almanya İşçi Alımı">
+    <link rel="shortcut icon" href="/public/images/ihcicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />-->
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-  <!--Nav Alanı-->
-<nav class="bg-red border-x-gray-800 dark:border-gray-600 dark:bg-gray-900">
-  <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-      <a href="#" class="flex items-center">
-          <img src="/public/images/logo.png" class="h-8 mr-3" alt="" />
-
-      </a>
-      <button data-collapse-toggle="menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="menu-full" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-      <div id="menu-full" class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
-              </li>
-              <li>
-                  <button id="menu-full-dropdown-button" data-collapse-toggle="menu-full-dropdown" class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Company <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-          </svg></button>
-              </li>
-              <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
-              </li>
-              <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Resources</a>
-              </li>
-              <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-  <div id="menu-full-dropdown" class="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
-      <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
-          <ul>
-              <li>
-                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                      <div class="font-semibold">Online Stores</div>
-                      <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                      <div class="font-semibold">Segmentation</div>
-                      <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                      <div class="font-semibold">Marketing CRM</div>
-                      <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                  </a>
-              </li>
-          </ul>
-          <ul>
-              <li>
-                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                      <div class="font-semibold">Online Stores</div>
-                      <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                      <div class="font-semibold">Segmentation</div>
-                      <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                      <div class="font-semibold">Marketing CRM</div>
-                      <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </div>
-</nav>
-
-  <!--Nav Alanı Sonu-->
-
-  <!--Header Alanı-->
-  <section class="mt-5 p-5">
-
-    <div
-      class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:lg\:max-w-xl hover:bg-blue-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-blue-950 ">
-
-      <div class="w-full flex flex-col justify-between p-4 leading-normal ">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">5651 ‌Loglama Kanunu</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">5651 sayılı kanuna göre her işletme bu kanunun
-          belirttiği şekilde internet kayıtlarını tutmak zorundadır.
-        </p>
-
-        <div class="sm:flex-none justify-between lg\:flex w-96 ">
-          <a href="#"
-            class="text-white text-center w-32 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Teklif
-            Alın</a>
-          <a href="#"
-            class="text-white text-center w-32 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Teklif
-            Alın</a>
+    <!--Nav Alanı-->
+    <nav class="border-gray-200 dark:bg-gray-900" style="background-color: var;">
+        <div class="flex flex-wrap items-center max-w-screen-xl mx-auto p-6">
+            <a href="#" class="flex items-center">
+                <img src="/public/images/logo.png" class="h-16 mr-3" alt="IHC Logo" />
+                <span style="display: none;"
+                    class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">IHC</span>
+            </a>
+            <div class="flex items-center md:order-2">
+                <a href="#"
+                    class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+                    hidden>Login</a>
+                <a href="#"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    hidden>Sign
+                    up</a>
+                <button data-collapse-toggle="mega-menu" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mega-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+                    <li>
+                        <a href="#"
+                            class="block py-4 pl-3 pr-4 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+                            Company <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <div id="mega-menu-dropdown"
+                            class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700">
+                            <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                                <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Library
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Resources
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Pro Version
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Newsletter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Playground
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            License
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-4">
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Support Center
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Terms
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Team</a>
+                    </li>
+                    <li hidden>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+    <!--Nav Sonu-->
 
-      <img class="object-cover w-full m-2 rounded-lg h-36  md:h-96" src="images/loglama.jpg" alt="">
-
+    <div class="bg123">
     </div>
 
-  </section>
+    <section class="left-heads-ihc mt-5 p-5">
+        <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
 
-  <!--Header Alanı Sonu-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="main.js"></script>
+          
+
+
+            <figure class="flex flex-col items-center justify-center p-8 text-center border-b border-gray-200 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
+
+                <div class="inclusive-right">
+                    <h1
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-xl ">
+                        Almanya İşçi Alımı Projesi</h1>
+                    <h3>Meslek Kazandırma, Kariyerde Gelişim ve İleri Eğitim Projesi</h3>
+                    <span class="vr"></span>
+                </div>
+
+            </figure>
+    </section>
+
+    </div>
+    <!--Header Alanı Sonu-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
