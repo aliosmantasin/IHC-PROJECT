@@ -15,24 +15,33 @@ h1, h2, h3, h4, h5, h6, a, p, article {
     background-color: var(--main-dark-blue);
   }
 
-.swiper {
+  .mega-menu-dropdown {
+    position: absolute;
+    inset: 0!important;
+    margin: 0px;
     width: 100%;
-    height: 100%;
+    z-index: 999;
+  }
+ 
+  .bg123{
+   position: absolute;
+   height: 200px;
+   background-color: var(--main-dark-blue);
+   right: 0;
+   top: 0;
+   height: 90vh;
+   width: 25%;
+   z-index: -1;
+   border-top-left-radius: 50px;
+   border-bottom-left-radius: 50px;
   }
   
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .inclusive-right{
+    height: 500px;
+    background: rgb(203,187,159);
+    background: linear-gradient(90deg, rgba(203,187,159,1) 0%, rgba(203,187,159,1) 12%, rgba(223,205,174,1) 96%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
   }
   
