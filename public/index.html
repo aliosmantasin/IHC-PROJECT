@@ -15,10 +15,10 @@
 
 <body>
     <!--Nav Alanı-->
-    <nav class="border-gray-200 dark:bg-gray-900" style="background-color: var;">
+    <nav class="border-gray-200 dark:bg-gray-900 justify-between">
         <div class="flex flex-wrap items-center max-w-screen-xl mx-auto p-6">
             <a href="#" class="flex items-center">
-                <img src="/public/images/logo.png" class="h-16 mr-3" alt="IHC Logo" />
+                <img src="/public/svg/logo.svg" class="h-16 mr-3" alt="IHC Logo" />
                 <span style="display: none;"
                     class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">IHC</span>
             </a>
@@ -156,10 +156,10 @@
     <div class="bg123">
     </div>
 
-    <section class="left-heads-ihc mt-5 p-5">
-        <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
+    <section class="heads-ihc mt-5 p-5">
+        <div class="grid mb-8 md:mb-12 md:grid-cols-2">
     
-            <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
+            <figure class="sm:w-60 flex flex-col items-center justify-center p-8 text-center  bg-white  border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg border dark:bg-gray-800 dark:border-gray-700 ">
                 <p class="p-5 mb-3 text-2xl ">Hangi Meslekler Projeye Dahil Olabiliyor?</p>   
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
@@ -167,17 +167,17 @@
                         <!-- Item 1 Garson -->
                         <div class="hidden duration-75 ease-in-out" id="garson" data-carousel-item>
                             <img src="/public/images/garson.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500"><p>IHC ile Servis Sanatında Ustalaşın Lezzet ve Hizmeti Birleştirin! 🍽️</p></div>
+                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500"><p hidden>IHC ile Servis Sanatında Ustalaşın Lezzet ve Hizmeti Birleştirin! 🍽️</p></div>
                         </div>
                         <!-- Item 2 Mutfak-->
                         <div class="hidden duration-75 ease-in-out" id="mutfak" data-carousel-item>
                             <img src="/public/images/mutfak.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500"><p>IHC ile Lezzetin Sırlarını Keşfet, Mutfak Sanatının Büyüsüne Kapıl! 🍳🔥</p></div>
+                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500"><p hidden>IHC ile Lezzetin Sırlarını Keşfet, Mutfak Sanatının Büyüsüne Kapıl! 🍳🔥</p></div>
                         </div>
                         <!-- Item 3 Ön Büro-->
                         <div class="hidden duration-75 ease-in-out" id="onburo" data-carousel-item>
                             <img src="/public/images/resepsiyon.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500"><p>IHC ile Misafirleri Karşılama Sanatını Öğren, Ön Büro Profesyoneli Ol! 🌟🎉</p></div>
+                            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500"><p hidden>IHC ile Misafirleri Karşılama Sanatını Öğren, Ön Büro Profesyoneli Ol! 🌟🎉 </p></div>
                         </div>
                     </div>
                     <!-- Slider indicators -->
@@ -206,14 +206,16 @@
                 </div>
             </figure>
     
-            <figure class="flex flex-col items-center justify-center p-8 text-center border-b border-gray-200 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
-                <div class="inclusive-right ">
-                    <h1 class="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-xl ">
-                        Almanya İşçi Alımı Projesi</h1>
-                    <h3>Meslek Kazandırma, Kariyerde Gelişim ve İleri Eğitim Projesi</h3>
-                    <span class="vr"></span>
-                </div>
-            </figure>
+           <figure class="flex flex-col items-center justify-center p-8 text-center border border-gray-200 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="inclusive-right flex flex-col items-center justify-center">
+        <h1 class="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-xl text-center">
+            <span class="text-6xl tracking-wide">Almanya</span> <br> <span class="text-3xl">İşçi Alımı Projesi</span>
+        </h1>
+        <span class="vr"></span>
+        <h3 class="mt-5 text-white">Meslek Kazandırma, Kariyerde Gelişim ve İleri Eğitim Projesi</h3>
+        
+    </div>
+</figure>
            
         </div>
         <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">İletişime Geç</button>

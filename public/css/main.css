@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6, a, p, article {
     background-color: var(--main-dark-blue);
   }
 
+
   .mega-menu-dropdown {
     position: absolute;
     inset: 0!important;
@@ -26,7 +27,8 @@ h1, h2, h3, h4, h5, h6, a, p, article {
   .bg123{
    position: absolute;
    height: 200px;
-   background-color: var(--main-dark-blue);
+   background: rgb(203,187,159);
+   background: linear-gradient(90deg, rgba(203,187,159,1) 0%, rgba(203,187,159,1) 12%, rgba(223,205,174,1) 96%);
    right: 0;
    top: 0;
    height: 90vh;
@@ -34,17 +36,38 @@ h1, h2, h3, h4, h5, h6, a, p, article {
    z-index: -1;
    border-top-left-radius: 50px;
    border-bottom-left-radius: 50px;
+   
   }
+
+  .heads-ihc figure{
+   background-color: rgb(242, 243, 243);
+    min-width: 300px;
+  }
+  
   
   .inclusive-right{
     height: 500px;
     width: 500px;
-    background: rgb(203,187,159);
-    background: linear-gradient(90deg, rgba(203,187,159,1) 0%, rgba(203,187,159,1) 12%, rgba(223,205,174,1) 96%);
+    min-width: 300px;
+    background-color: var(--main-dark-blue);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
   }
+  
+  .inclusive-right span:first-child{
+    color: #ffffff;
+  }
+
+  .inclusive-right h1 span:nth-last-child(1){
+    color: #cbbb9f;
+  }
+
+  .vr {
+    width: 300px;
+    border-bottom: 3px solid #cbbb9f;
+  }
+
 
   #mutfak div p {
     background-color: var(--main-dark-blue);
@@ -67,3 +90,10 @@ h1, h2, h3, h4, h5, h6, a, p, article {
     border-radius: 20px;
   }
 
+
+  @media (max-width: 425px) {
+    .inclusive-right{
+     width: 350px;
+     margin: 0 20px 0 20px;
+    }
+  }
