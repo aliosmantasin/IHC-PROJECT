@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/public/images/ihcicon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -141,7 +141,8 @@
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Proje Detay</a>
+                            class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Proje
+                            Detay</a>
                     </li>
                     <li>
                         <a href="#"
@@ -163,70 +164,35 @@
     </div>
     <!--BG-->
 
-     <!--Header Alanı Başı-->
-    <section class="heads-ihc mt-5 p-5">
+    <!--Header Alanı Başı-->
+    <section class="heads-ihc mt-5 p-5 h-full">
         <div class="grid mb-8 md:mb-12 md:grid-cols-2">
-
+    
             <figure
                 class="sm:w-60 flex flex-col items-center justify-center p-8 text-center  bg-white  border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg border dark:bg-gray-800 dark:border-gray-700 ">
-                <p class="p-5 mb-3 text-2xl ">Hangi Meslekler Projeye Dahil Olabiliyor?</p>
-                <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                    <!-- Carousel wrapper -->
-                    <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
-                        <!-- Item 1 Garson -->
-                        <div class="hidden duration-1000 ease-in-out" id="garson" data-carousel-item>
-                            <img src="/public/images/garson.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="IHC servis sanatı">
-                            <div
-                                class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500">
-                                <p class="absolute bottom-2">IHC ile Servis Sanatında Ustalaşın Lezzet ve Hizmeti Birleştirin! 🍽️</p>
-                            </div>
-                        </div>
-                        <!-- Item 2 Mutfak-->
-                        <div class="hidden duration-1000 ease-in-out" id="mutfak" data-carousel-item>
-                            <img src="/public/images/mutfak.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="IHC gastronomi sanatı">
-                            <div
-                                class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500">
-                                <p class="absolute bottom-2">IHC ile Lezzetin Sırlarını Keşfet, Mutfak Sanatının Büyüsüne Kapıl! 🍳🔥</p>
-                            </div>
-                        </div>
-                        <!-- Item 3 Ön Büro-->
-                        <div class="hidden duration-1000 ease-in-out" id="onburo" data-carousel-item>
-                            <img src="/public/images/resepsiyon.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="IHC resepsiyon">
-                            <div
-                                class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-1xl bg-slate-500">
-                                <p class="absolute bottom-2">IHC ile Misafirleri Karşılama Sanatını Öğren, Ön Büro Profesyoneli Ol! 🌟🎉
-                                </p>
-                            </div>
-                        </div>
+                <p class="text-2xl">Hangi Meslekler Projeye Dahil Olabiliyor?</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><p class="absolute bg-white p-2 rounded-md" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">IHC ile Servis Sanatında Ustalaşın Lezzet ve Hizmeti Birleştirin! 🍽️</p><img src="/public/images/garson.jpg" alt="IHC Servis Sanatları"></div>
+
+                        <div class="swiper-slide"><p class="absolute bg-white p-2 rounded-md" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">IHC ile Lezzetin Sırlarını Keşfet, Mutfak Sanatının Büyüsüne Kapıl! 🍳🔥</p><img src="/public/images/mutfak.jpg" alt="IHC Gastronomi"></div>
+
+                        <div class="swiper-slide"><p class="absolute bg-white p-2 rounded-md" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">IHC ile Misafirleri Karşılama Sanatını Öğren, Ön Büro Profesyoneli Ol! 🌟🎉
+                        </p><img src="/public/images/resepsiyon.jpg" alt="IHC Ön Büro"></div>
+
                     </div>
-                    <!-- Slider controls -->
-                    <div class="flex justify-center items-center pt-4">
-                        <button type="button" class="flex justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
-                                </svg>
-                                <span class="sr-only">Previous</span>
-                            </span>
-                        </button>
-                        <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                                </svg>
-                                <span class="sr-only">Next</span>
-                            </span>
-                        </button>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
                     </div>
                 </div>
-
             </figure>
+
 
             <figure
                 class="flex flex-col items-center justify-center p-8 text-center border border-gray-200 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
@@ -241,108 +207,81 @@
                     <div class="social">
                         <div class="social-inclusive">
                             <a href="https://www.facebook.com/ihc.inthospitality.company" target="_blank">
-                        <svg id="fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" url="www.google.com">
-                            <defs>
-                              <style>
-                                .cls-1 {
-                                  stroke-width: 0px;
-                                }
-                              </style>
-                            </defs>
-                            <path class="cls-1" d="m100,16.41C53.6,16.41,15.98,54.03,15.98,100.43c0,42.12,31.03,76.9,71.46,82.98v-60.71h-20.79v-22.08h20.79v-14.7c0-24.33,11.85-35.01,32.07-35.01,9.68,0,14.81.72,17.23,1.05v19.28h-13.79c-8.58,0-11.58,8.14-11.58,17.31v12.07h25.16l-3.41,22.08h-21.74v60.89c41.01-5.56,72.64-40.63,72.64-83.16,0-46.4-37.62-84.02-84.02-84.02Z"/>
-                          </svg>
-                        </a>
-                        
-                        <a href="https://www.instagram.com/ihc.inthospitality.company/" target="_blank">
-                          <svg id="ins" data-name="İnstagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                            <defs>
-                              <style>
-                                .cls-1 {
-                                  stroke-width: 0px;
-                                }
-                              </style>
-                            </defs>
-                            <path class="cls-1" d="m64.7,15.32c-27.23,0-49.39,22.17-49.39,49.41v70.57c0,27.23,22.17,49.39,49.41,49.39h70.57c27.23,0,49.39-22.17,49.39-49.41v-70.57c0-27.23-22.17-49.39-49.41-49.39h-70.57Zm84.7,28.23c3.9,0,7.06,3.16,7.06,7.06s-3.16,7.06-7.06,7.06-7.06-3.16-7.06-7.06,3.16-7.06,7.06-7.06Zm-49.4,14.11c23.35,0,42.34,18.99,42.34,42.34s-18.99,42.34-42.34,42.34-42.34-18.99-42.34-42.34,18.99-42.34,42.34-42.34Zm0,14.11c-15.59,0-28.23,12.64-28.23,28.23s12.64,28.23,28.23,28.23,28.23-12.64,28.23-28.23-12.64-28.23-28.23-28.23Z"/>
-                          </svg>
-                        </a>
-                          <a href="https://www.linkedin.com/company/70448086/admin/feed/posts/" target="_blank">
-                          <svg id="linke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                            <defs>
-                              <style>
-                                .cls-1 {
-                                  stroke-width: 0px;
-                                }
-                              </style>
-                            </defs>
-                            <path class="cls-1" d="m165.87,15.32H34.13c-10.4,0-18.82,8.42-18.82,18.82v131.73c0,10.4,8.42,18.82,18.82,18.82h131.73c10.4,0,18.82-8.42,18.82-18.82V34.13c0-10.4-8.42-18.82-18.82-18.82ZM59.9,147.05h0c-6.56,0-11.87-5.32-11.87-11.87v-42.13c0-6.55,5.33-11.87,11.87-11.87h0c6.56,0,11.87,5.32,11.87,11.87v42.13c0,6.55-5.32,11.87-11.87,11.87Zm-.41-77.94c-7.25,0-12.1-4.84-12.1-11.29s4.84-11.29,12.9-11.29c7.25,0,12.1,4.84,12.1,11.29s-4.84,11.29-12.9,11.29Zm85.48,77.94h0c-6.34,0-11.49-5.15-11.49-11.49v-24.51c0-9.96-6.13-11.05-8.42-11.05s-9.96.33-9.96,11.05v24.51c0,6.34-5.15,11.49-11.49,11.49h-.76c-6.34,0-11.49-5.15-11.49-11.49v-42.5c0-6.56,5.32-11.87,11.87-11.87h0c6.56,0,11.87,5.32,11.87,11.87,0,0,2.65-11.87,20.68-11.87,11.47,0,20.66,9.19,20.66,29.87v24.51c0,6.34-5.15,11.49-11.49,11.49Z"/>
-                          </svg>
-                        </a>
+                                <svg id="fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"
+                                    url="www.google.com">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                stroke-width: 0px;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="cls-1"
+                                        d="m100,16.41C53.6,16.41,15.98,54.03,15.98,100.43c0,42.12,31.03,76.9,71.46,82.98v-60.71h-20.79v-22.08h20.79v-14.7c0-24.33,11.85-35.01,32.07-35.01,9.68,0,14.81.72,17.23,1.05v19.28h-13.79c-8.58,0-11.58,8.14-11.58,17.31v12.07h25.16l-3.41,22.08h-21.74v60.89c41.01-5.56,72.64-40.63,72.64-83.16,0-46.4-37.62-84.02-84.02-84.02Z" />
+                                </svg>
+                            </a>
+
+                            <a href="https://www.instagram.com/ihc.inthospitality.company/" target="_blank">
+                                <svg id="ins" data-name="İnstagram" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 200 200">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                stroke-width: 0px;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="cls-1"
+                                        d="m64.7,15.32c-27.23,0-49.39,22.17-49.39,49.41v70.57c0,27.23,22.17,49.39,49.41,49.39h70.57c27.23,0,49.39-22.17,49.39-49.41v-70.57c0-27.23-22.17-49.39-49.41-49.39h-70.57Zm84.7,28.23c3.9,0,7.06,3.16,7.06,7.06s-3.16,7.06-7.06,7.06-7.06-3.16-7.06-7.06,3.16-7.06,7.06-7.06Zm-49.4,14.11c23.35,0,42.34,18.99,42.34,42.34s-18.99,42.34-42.34,42.34-42.34-18.99-42.34-42.34,18.99-42.34,42.34-42.34Zm0,14.11c-15.59,0-28.23,12.64-28.23,28.23s12.64,28.23,28.23,28.23,28.23-12.64,28.23-28.23-12.64-28.23-28.23-28.23Z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/70448086/admin/feed/posts/" target="_blank">
+                                <svg id="linke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                stroke-width: 0px;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="cls-1"
+                                        d="m165.87,15.32H34.13c-10.4,0-18.82,8.42-18.82,18.82v131.73c0,10.4,8.42,18.82,18.82,18.82h131.73c10.4,0,18.82-8.42,18.82-18.82V34.13c0-10.4-8.42-18.82-18.82-18.82ZM59.9,147.05h0c-6.56,0-11.87-5.32-11.87-11.87v-42.13c0-6.55,5.33-11.87,11.87-11.87h0c6.56,0,11.87,5.32,11.87,11.87v42.13c0,6.55-5.32,11.87-11.87,11.87Zm-.41-77.94c-7.25,0-12.1-4.84-12.1-11.29s4.84-11.29,12.9-11.29c7.25,0,12.1,4.84,12.1,11.29s-4.84,11.29-12.9,11.29Zm85.48,77.94h0c-6.34,0-11.49-5.15-11.49-11.49v-24.51c0-9.96-6.13-11.05-8.42-11.05s-9.96.33-9.96,11.05v24.51c0,6.34-5.15,11.49-11.49,11.49h-.76c-6.34,0-11.49-5.15-11.49-11.49v-42.5c0-6.56,5.32-11.87,11.87-11.87h0c6.56,0,11.87,5.32,11.87,11.87,0,0,2.65-11.87,20.68-11.87,11.47,0,20.66,9.19,20.66,29.87v24.51c0,6.34-5.15,11.49-11.49,11.49Z" />
+                                </svg>
+                            </a>
 
                         </div>
                     </div>
                     <button type="button"
-                    class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 w-56 mt-10 animate-pulse">Şimdi Başvur</button>
+                        class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 w-56 mt-10 animate-pulse">Şimdi
+                        Başvur</button>
                 </div>
             </figure>
 
         </div>
 
-        
+
 
     </section>
-
-    <div class="md:container md:mx-auto">
-       asdasdadasd
-      </div>
-
-
-<!-- Modal toggle -->
-<button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-    Toggle modal
-  </button>
-  
-  <!-- Main modal -->
-  <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-      <div class="relative w-full max-w-2xl max-h-full">
-          <!-- Modal content -->
-          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-              <!-- Modal header -->
-              <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                      Terms of Service
-                  </h3>
-                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
-                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                      <span class="sr-only">Close modal</span>
-                  </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-6 space-y-6">
-                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                  </p>
-                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
-                  </p>
-              </div>
-              <!-- Modal footer -->
-              <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                  <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
-                  <button data-modal-hide="defaultModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
-              </div>
-          </div>
-      </div>
-  </div>
-  
-
-      
-    
     <!--Header Alanı Sonu-->
+<div class="container mx-auto">
+    <div class="p-4 mt-5 mb-4 border text-sm text-white rounded-lg  dark:bg-gray-800 dark:text-green-400" style="background-color: var(--main-dark-blue);" role="alert">
+        <span class="font-medium">Success alert!</span> Change a few things up and try submitting again.
+      </div>
+</div>
+
+
+
+
+    <!--Header Alanı Sonu-->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
+
+
 </body>
 
 </html>

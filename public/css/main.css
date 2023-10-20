@@ -35,7 +35,6 @@ article {
 
 .bg123 {
   position: absolute;
-  height: 200px;
   background: rgb(203, 187, 159);
   background: linear-gradient(90deg, rgba(203, 187, 159, 1) 0%, rgba(203, 187, 159, 1) 12%, rgba(223, 205, 174, 1) 96%);
   right: 0;
@@ -47,7 +46,6 @@ article {
   border-bottom-left-radius: 50px;
 }
 
-
 .heads-ihc {
   position: relative;
 }
@@ -55,6 +53,7 @@ article {
 .heads-ihc figure {
   background-color: rgb(242, 243, 243);
   min-width: 300px;
+  height: 65vh;
 }
 
 .inclusive-right {
@@ -90,7 +89,7 @@ article {
 
 .social {
   position: absolute;
-  right: 1%;
+  right: 4%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -132,26 +131,51 @@ article {
   border-bottom: 3px solid #cbbb9f;
 }
 
-
-#mutfak div p {
-  background-color: var(--main-dark-blue);
-  color: #ffffff;
-  padding: 5px;
-  border-radius: 20px;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
-
-#garson div p {
-  background-color: var(--main-dark-blue);
-  color: #ffffff;
-  padding: 5px;
-  border-radius: 20px;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-#onburo div p {
-  background-color: var(--main-dark-blue);
-  color: #ffffff;
-  padding: 5px;
-  border-radius: 20px;
+.swiper-slide img {
+  display: block;
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+}
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
 }
 
 
