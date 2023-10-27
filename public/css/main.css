@@ -24,6 +24,10 @@ article {
   background-color: var(--main-dark-blue);
 }
 
+i {
+  color: darkslateblue;
+}
+
 
 .mega-menu-dropdown {
   position: absolute;
@@ -198,6 +202,18 @@ article {
   height: 100%;
   object-fit: cover;
 }
+
+.step-one {
+  width: 300px;
+  background-color: wheat;
+  
+}
+
+/**********************/
+
+
+
+
 
 
 /******************/
