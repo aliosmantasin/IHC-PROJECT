@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.22 60.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #232445;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="online-basvuru">
+    <g>
+      <path class="cls-1" d="m11.51,0h26.32v18.97h18.97v11.25H11.51V0Z"/>
+      <path class="cls-1" d="m11.51,43.85h45.28v16.86H11.51v-16.86Z"/>
+      <path class="cls-1" d="m41.96.89c4.66,4.65,9.39,9.38,14.06,14.03h-14.06V.89Z"/>
+      <path class="cls-1" d="m18.7,34.36v5.37H0v-5.37h18.7Z"/>
+      <path class="cls-1" d="m49.62,34.35h18.6v5.4h-18.6v-5.4Z"/>
+      <path class="cls-1" d="m41.58,34.36v5.37h-14.89v-5.37h14.89Z"/>
+    </g>
+  </g>
+</svg>
