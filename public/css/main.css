@@ -203,19 +203,37 @@ i {
   object-fit: cover;
 }
 
+.three-steps{
+  background-color: rgb(242, 243, 243);
+}
+
 .step-one {
   width: 300px;
-  background-color: wheat;
-  
+  height: 250px;
 }
+
+.step-one h5{
+  left: 55px;
+  top: 70px;
+}
+
+.step-one p{
+  left: 20px;
+  bottom: 30px;
+}
+
 
 .icon-step {
   left: -55px;
   top: 20px;
- 
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   
+}
+
+.numbere-one{
+  right: 0;
+  top: 0;
 }
 
 /**********************/
