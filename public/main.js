@@ -15,21 +15,6 @@ var swiper = new Swiper(".mySeceondSwiper", {
   },
 });
 
-var swiper = new Swiper(".myOrtaklarSwiper", {
-  slidesPerView: 1, // Mobilde 1 slide göster
-  spaceBetween: 30,
-  autoplay: false,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    // Büyük ekranlarda 4 slide göster
-    768: {
-      slidesPerView: 1,
-    },
-  },
-});
 
 
 
@@ -74,6 +59,22 @@ const progressCircle = document.querySelector(".autoplay-progress svg");
 
 
 
+var swiper = new Swiper(".myOrtaklarSwiper", {
+  slidesPerView: 1, // Mobilde 1 slide göster
+  spaceBetween: 30,
+  autoplay: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // Ekran 
+    
+    425: {
+      slidesPerView: 1,
+    },
+  },
+});
 
 
 
