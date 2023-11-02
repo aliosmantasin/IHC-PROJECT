@@ -1,25 +1,3 @@
-
-var swiper = new Swiper(".mySeceondSwiper", {
-  slidesPerView: 1, // Mobilde 1 slide göster
-  spaceBetween: 30,
-  autoplay: false,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    // Büyük ekranlarda 4 slide göster
-    768: {
-      slidesPerView: 4,
-    },
-  },
-});
-
-
-
-
-
-
 /**  Initialize Swiper **/
 const progressCircle = document.querySelector(".autoplay-progress svg");
     const progressContent = document.querySelector(".autoplay-progress span");
@@ -59,7 +37,7 @@ const progressCircle = document.querySelector(".autoplay-progress svg");
 
 
 
-var swiper = new Swiper(".myOrtaklarSwiper", {
+var swiper = new Swiper(".mySeceondSwiper", {
   slidesPerView: 1, // Mobilde 1 slide göster
   spaceBetween: 30,
   autoplay: false,
@@ -68,13 +46,36 @@ var swiper = new Swiper(".myOrtaklarSwiper", {
     clickable: true,
   },
   breakpoints: {
-    // Ekran 
-    
-    425: {
+    // Büyük ekranlarda 4 slide göster
+    768: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+
+
+var swiper = new Swiper(".myOrtaklarSwiper", {
+  slidesPerView: 1, // Mobilde 1 slide göster
+  spaceBetween: 30,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // Büyük ekranlarda 4 slide göster
+    768: {
       slidesPerView: 1,
     },
   },
 });
+
+
+
 
 
 
