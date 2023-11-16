@@ -85,7 +85,6 @@ i {
   width: 100%;
 }
 
-
 .social-inclusive {
   position: relative;
   display: block;
@@ -132,7 +131,7 @@ i {
 
 .vr {
   width: 300px;
-  border-bottom: 3px solid #cbbb9f;
+  border-bottom: 2px solid #cbbb9f;
 }
 
 .swiper {
@@ -149,11 +148,11 @@ i {
 }
 .swiper-slide img {
   display: block;
-  width: 75%;
-  height: 75%;
+  width: 85%;
+  height: 85%;
   object-fit: cover;
 }
-.autoplay-progress {
+.autoplay-progress { /**Sayaç Ayarı**/
   position: absolute;
   right: 16px;
   bottom: 16px;
@@ -182,9 +181,13 @@ i {
   transform: rotate(-90deg);
 }
 
-.mySeceondSwiper {
+.mySeceondSwiper { /** 2. Slide**/
   width: 100%;
   height: 100%;
+}
+
+.swiper-slide p {
+  bottom:10%;
 }
 
 .three-steps{

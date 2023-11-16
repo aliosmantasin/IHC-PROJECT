@@ -6,16 +6,17 @@ const progressCircle = document.querySelector(".autoplay-progress svg");
       centeredSlides: true,
       autoplay: {
         delay: 5000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
+        disableOnInteraction: false,
       },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
-      },
+      }
+      ,/*
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },*/
       on: {
         autoplayTimeLeft(s, time, progress) {
           progressCircle.style.setProperty("--progress", 1 - progress);
