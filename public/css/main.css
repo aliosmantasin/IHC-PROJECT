@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 section {
-
+  /*padding: 60px 0;*/
   min-height: 65vh;
 }
 
@@ -141,7 +141,7 @@ i {
 
 .swiper {
   width: 100%;
-  height: 100%;
+ /* height: 100%;*/
 }
 .swiper-slide{
   
@@ -153,8 +153,8 @@ i {
 }
 .swiper-slide img {
   display: block;
-  width: 85%;
-  height: 85%;
+  width: 100%;
+  height: 90%;
   object-fit: cover;
 }
 .autoplay-progress { /**Sayaç Ayarı**/
@@ -200,8 +200,8 @@ i {
 }
 
 .step-one {
-  width: 300px;
-  height: 250px;
+  width: 275px;
+  height: 220px;
 }
 
 .step-one h5{
@@ -210,13 +210,16 @@ i {
 }
 
 .step-one p{
-  left: 20px;
-  bottom: 30px;
+  left: 0;
+  bottom: 5px;
+  padding: 10;
 }
 
 
 .icon-step {
-  left: -55px;
+  width: 65px;
+  height: 65px;
+  left: -30px;
   top: 20px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -309,9 +312,14 @@ ul a {
   transition: color 0.5s ease;
 }
 
-#animation_container, #_preload_div_ {
-	margin:auto;
- 
+.canvas-area {
+ /* background-color: #cbbb9f; */
+}
+
+#animation_container{
+  width: 607.857;
+  min-width: 400px;
+  height: 500px!important;
 }
 
 

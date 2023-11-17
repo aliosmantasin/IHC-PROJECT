@@ -273,7 +273,6 @@
     <!--Header Alanı Sonu-->
 
     <!--Slider Alanı-->
-
     <div class="swiper mySeceondSwiper">
         <div class="swiper-wrapper">
             <!--------->
@@ -359,7 +358,6 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
-
     <!--Slider Alanı Sonu-->
 
     <!--Three Step Başı-->
@@ -392,7 +390,7 @@
                         </p>
                     </div>
 
-                    <div class="icon-step absolute w-20 h-20 rounded-md flex items-center">
+                    <div class="icon-step absolute  rounded-md flex items-center">
                         <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 68.22 60.71" width="40" style="margin:auto">
                             <defs>
@@ -542,12 +540,13 @@
                 </div>
             </div>
         </div>
+      
     </section>
     <!--Three Step Sonu-->
 
     <!--Proje Ortakları Başı-->
-    <section class="mx-5 pb-5">
-        <div class="container sm:flex-none md:flex mx-auto gap-5">
+    <section class="mx-5 pb-5 flex">
+        <div class="container md:flex mx-auto gap-5 items-center">
             <div class="grid grid-flow-row gap-8">
                 <div class="text-left shadow p-4">
                     <h3 class="text-4xl tracking-widest mb-3 text-left">Kaliteli Bir Proje İle, <br>Nitelikli Personel
@@ -563,7 +562,7 @@
 
 
 
-                <div class="relative ml-4">
+                <div class="relative ml-4 ">
                     <div class="bgabc"></div>
                     <span class="flex mr-2 ml-2">
                         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"
@@ -642,7 +641,7 @@
             </div>
 
             <!-- Ortakların Slide Alanı -->
-            <div class="swiper myOrtaklarSwiper shadow place-self-center">
+            <div class="swiper myOrtaklarSwiper shadow">
                 <div class="swiper-wrapper ">
                     <!--------->
                     <div class="swiper-slide">
@@ -710,7 +709,7 @@
     <!--Proje Ortakları Sonu-->
 
     <!--Soru Cevap Alanı Başı-->
-    <section class="soru-cevap bg-gray-100 mt-10 pb-10 pt-5">
+    <section class="soru-cevap bg-gray-100 pt-5 ">
         <div class="text-center">
             <p class="text-lg text-gray-900 dark:text-white">Sık Sorulan Sorular</p>
 
@@ -832,20 +831,17 @@
 
     <!--Özelliklerimiz-->
     <section class="mx-5 pb-5">
-        <div class="container sm:flex-none md:flex mx-auto gap-5">
-            <div class="">
-                <div id="animation_container"
-                    style="background-color:rgba(255, 255, 255, 1.00); width:250px; height:250px">
-                    <canvas id="canvas" width="250" height="250"
-                        style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+        <div class="container sm:flex-none md:flex mx-auto gap-5 items-center">
+            <div class="canvas-area">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
                     <div id="dom_overlay_container"
                         style="pointer-events:none; overflow:hidden; width:250px; height:250px; position: absolute; left: 0px; top: 0px; display: none;">
                     </div>
                 </div>
-                <div id='_preload_div_'
-                    style='position:absolute; top:0; left:0; display: inline-block; height:250px; width:250px; text-align: center;'>
-                    <span style='display: inline-block; height: 100%; vertical-align: middle;'></span> <img
-                        src=images/_preloader.gif style='vertical-align: middle; max-height: 100%' /></div>
+                <div id='_preload_div_'>
+                    <span style='display: inline-block; height: 100%; vertical-align: middle;'></span> 
+                    <imgsrc=images/_preloader.gif style='vertical-align: middle; max-height: 100%' /></div>
             </div>
             <!--Metin Alanı-->
             <div class="info-alani">
@@ -857,14 +853,7 @@
 
         </div>
 
-        <!--Ara Çalışma Başı-->
-        <div class="container mx-auto p-1 ">
-            <div class="p-4  mb-4 text-sm text-white rounded-lg text-center "
-                style="background-color: var(--main-dark-blue);" role="alert">
-                <span class="font-medium">IHC AYNI SENİN GİBİ!</span> GENÇ, DİNAMİK VE KARİYER ODAKLI.
-            </div>
-        </div>
-        <!--Ara Çalışma Sonu-->
+      
 
     </section>
     <!--Proje Ortakları Sonu-->
