@@ -166,11 +166,11 @@
 
     <!--Header Alanı Başı-->
     <section class="heads-ihc h-full">
-        <div class="grid mb-8 md:mb-12 md:grid-cols-2">
+        <div class="grid md:grid-cols-2">
 
             <figure
                 class="sm:w-60 flex flex-col items-center justify-center p-8 text-center  bg-white  border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg border dark:bg-gray-800 dark:border-gray-700 scroll-smooth">
-                <p class="text-2xl mb-2">Hangi Meslekler Projeye Dahil Olabiliyor?</p>
+               <!-- <p class="text-2xl mb-2">Hangi Meslekler Projeye Dahil Olabiliyor?</p> -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -273,7 +273,7 @@
     <!--Header Alanı Sonu-->
 
     <!--Slider Alanı-->
-    <div class="swiper mySeceondSwiper">
+    <div class="swiper mySeceondSwiper mb-10">
         <div class="swiper-wrapper">
             <!--------->
             <div class="swiper-slide">
@@ -361,8 +361,8 @@
     <!--Slider Alanı Sonu-->
 
     <!--Three Step Başı-->
-    <section class="three-steps  mt-5 mb-5 pb-5">
-        <div class="container mt-10 grid md:grid-cols-3 md:items-center mx-auto">
+    <section class="three-steps flex">
+        <div class="container  grid md:grid-cols-3 md:items-center mx-auto">
             <div class="p-5">
                 <h3 class="text-4xl tracking-widest mb-3">3 Adımda Projeye Dahil Ol!</h3>
                 <ul>
@@ -544,15 +544,45 @@
     </section>
     <!--Three Step Sonu-->
 
+    <!--Canvas Alanı-1 Başı-->
+    <section class="mx-5">
+        <div class="container sm:flex-none md:flex mx-auto gap-5 items-center">
+            <div class="canvas-area"s>
+                <div id="animation_container" >
+                    <canvas id="canvas" style="margin-top:25px;"></canvas>
+                    <div id="dom_overlay_container"
+                        style="pointer-events:none; overflow:hidden; width:250px; height:250px; position: absolute; left: 0px; top: 0px; display: none;">
+                    </div>
+                </div>
+                <div id='_preload_div_'>
+                    <span style='display: inline-block; height: 100%; vertical-align: middle;'></span> 
+                    <imgsrc=images/_preloader.gif style='vertical-align: middle; max-height: 100%' /></div>
+            </div>
+            <!--Metin Alanı-->
+            <div class="info-alani">
+                <h5 class="text-2xl">Meslek Kazandırma Kariyerde Gelişim, İleri Eğitim Projesi</h5>
+                <br>
+                <Article>Bu proje kapsamında diğer <b>Almanya İşçi Alımı</b> programlarına göre en önemli faktör; proje ortaklarımızla beraber belirli nitelikli 
+                    iş gücünü bünyemize alıp kaliteli kuruluşlarda 4 haftalık akademik eğitim almalarını sağlıyoruz bu süreçten sonra yine proje ortaklarımız olan Avrupa'da bulunan otellerde çalışmalarını sağlıyoruz. Kısaca şuanda Türkiye'de otel çalışanları - mesleki olarak gastronomi,
+                    servis çalışanları ve ön büro gibi mesleki tecrübeye sahip ve bunları kapsayan ilgili üniversite mezunlarını kapsamaktadır.
+                 </Article>
+                    <div class="">
+                    <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-5">Şimdi Başvur!</button> 
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--Canvas Alanı-1 Sonu-->
+
     <!--Proje Ortakları Başı-->
-    <section class="mx-5 pb-5 flex">
-        <div class="container md:flex mx-auto gap-5 items-center">
-            <div class="grid grid-flow-row gap-8">
-                <div class="text-left shadow p-4">
-                    <h3 class="text-4xl tracking-widest mb-3 text-left">Kaliteli Bir Proje İle, <br>Nitelikli Personel
+    <section class="mx-5 pb-5 flex bg-gray-100 ">
+        <div class="container md:flex mx-auto gap-6 items-center">
+            <div class="grid grid-flow-row  bg-white">
+                <div class="text-left shadow">
+                    <h3 class="text-4xl tracking-widest mb-3 text-left p-2">Kaliteli Bir Proje İle, <br>Nitelikli Personel
                         Yapılanması
                     </h3>
-                    <p>Meslek Kazandırma, Kariyerde Gelişim ve İleri Eğitim Projesi ile sağlam zemine basarak bir sürece
+                    <p class="p-5">Meslek Kazandırma, Kariyerde Gelişim ve İleri Eğitim Projesi ile sağlam zemine basarak bir sürece
                         dahil oluyorsunuz. Tamamen şirketimiz "<u>International Hospitality Company</u>" şuanda
                         Türkiye'de ve Kıbrısta belirli meslek gruplarına
                         kariyer sunmaktadır. Tabi ki bunun yanında vasıflı, belirli kişisel tecrübelere ve özelliklere
@@ -595,7 +625,7 @@
                             </g>
                         </svg>
 
-                        <span class="grid grid-flow-row">
+                        <span class="grid grid-flow-row p-3">
                             <h4> <b>Proje Güvencesi </b></h4>
                             <p>Proje Ortaklarının aralarında yapmış olduğu anlaşmalara istinaden güvenilir bir yapı
                                 kurulmuştur.</p>
@@ -631,7 +661,7 @@
                             <path class="support"
                                 d="m176.9,91.82c13.2-.15,24.52-11.41,24.72-24.59.2-13.21-11.41-24.94-24.77-25.04-13.39-.1-24.84,11.36-24.83,24.85.01,13.48,11.52,24.94,24.88,24.79Z" />
                         </svg>
-                        <span class="grid grid-flow-row">
+                        <span class="grid grid-flow-row p-3">
                             <h4><b>Aktif Danışman Desteği</b></h4>
                             <p>Hem başvuru sırasında hem de Almanya'da destek alabileceğiniz <b> Danışman Destek</b>
                                 ortamı oluşturulmuştur</p>
@@ -642,9 +672,9 @@
 
             <!-- Ortakların Slide Alanı -->
             <div class="swiper myOrtaklarSwiper shadow">
-                <div class="swiper-wrapper ">
+                <div class="swiper-wrapper bg-white">
                     <!--------->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide ">
                         <div class="max-w-sm p-6 bg-white">
 
                             <a href="#">
@@ -662,7 +692,7 @@
                     </div>
                     <!--------->
                     <!--------->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide bg-white">
                         <div class="max-w-sm p-6 bg-white">
 
                             <a href="#">
@@ -680,7 +710,7 @@
                     </div>
                     <!--------->
                     <!--------->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide bg-white">
                         <div class="max-w-sm p-6 bg-white">
 
                             <a href="#">
@@ -709,165 +739,135 @@
     <!--Proje Ortakları Sonu-->
 
     <!--Soru Cevap Alanı Başı-->
-    <section class="soru-cevap bg-gray-100 pt-5 ">
-        <div class="text-center">
-            <p class="text-lg text-gray-900 dark:text-white">Sık Sorulan Sorular</p>
+    <section class="soru-cevap pt-5  items-center">
+       
+            <div class="container mx-auto justify-center">
 
-            <p class="  text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">IHC ile ilgili tüm merak
-                ettiklerinizi sizin için derledik!</p>
-
-        </div>
-        <div class="container mx-auto">
-            <div id="accordion-nested-parent" data-accordion="collapse">
-                <h2 id="accordion-collapse-heading-1">
-                    <button type="button"
-                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-                        data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
-                        aria-controls="accordion-collapse-body-1">
-                        <span>IHC nedir?</span>
-                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5 5 1 1 5" />
-                        </svg>
-                    </button>
-                </h2>
-                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
-                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of
-                            interactive components built on top of Tailwind CSS including buttons, dropdowns, modals,
-                            navbars, and more.</p>
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
-                                href="/docs/getting-started/introduction/"
-                                class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start
-                            developing websites even faster with components on top of Tailwind CSS.</p>
-                        <p class="mb-4 text-gray-500 dark:text-gray-400">What are the differences between Flowbite and
-                            Tailwind UI?</p>
-                        <!-- Nested accordion -->
-                        <div id="accordion-nested-collapse" data-accordion="collapse">
-                            <h2 id="accordion-nested-collapse-heading-1">
-                                <button type="button"
-                                    class="flex items-center justify-between w-full p-5 rounded-t-xl font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-                                    data-accordion-target="#accordion-nested-collapse-body-1" aria-expanded="false"
-                                    aria-controls="accordion-nested-collapse-body-1">
-                                    <span>Open source</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-nested-collapse-body-1" class="hidden"
-                                aria-labelledby="accordion-nested-collapse-heading-1">
-                                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                                    <p class="text-gray-500 dark:text-gray-400">The main difference is that the core
-                                        components from Flowbite are open source under the MIT license, whereas Tailwind
-                                        UI is a paid product.</p>
+                <p class="text-lg text-gray-900 dark:text-white">Sık Sorulan Sorular</p>
+    
+                <p class="  text-3xl font-semibold leading-relaxed text-gray-900 dark:text-white">IHC ile ilgili tüm merak
+                    ettiklerinizi sizin için derledik!</p>
+                <div id="accordion-nested-parent" data-accordion="collapse">
+                    <h2 id="accordion-collapse-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            aria-controls="accordion-collapse-body-1">
+                            <span>IHC nedir?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of
+                                interactive components built on top of Tailwind CSS including buttons, dropdowns, modals,
+                                navbars, and more.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
+                                    href="/docs/getting-started/introduction/"
+                                    class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start
+                                developing websites even faster with components on top of Tailwind CSS.</p>
+                            <p class="mb-4 text-gray-500 dark:text-gray-400">What are the differences between Flowbite and
+                                Tailwind UI?</p>
+                            <!-- Nested accordion -->
+                            <div id="accordion-nested-collapse" data-accordion="collapse">
+                                <h2 id="accordion-nested-collapse-heading-1">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 rounded-t-xl font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-1" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-1">
+                                        <span>Open source</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-1" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-1">
+                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-500 dark:text-gray-400">The main difference is that the core
+                                            components from Flowbite are open source under the MIT license, whereas Tailwind
+                                            UI is a paid product.</p>
+                                    </div>
+                                </div>
+                                <h2 id="accordion-nested-collapse-heading-2">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-2" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-2">
+                                        <span>Architecture</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-2" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-2">
+                                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-500 dark:text-gray-400">Another difference is that Flowbite
+                                            relies on smaller and standalone components, whereas Tailwind UI offers sections
+                                            of pages.</p>
+                                    </div>
+                                </div>
+                                <h2 id="accordion-nested-collapse-heading-3">
+                                    <button type="button"
+                                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                                        data-accordion-target="#accordion-nested-collapse-body-3" aria-expanded="false"
+                                        aria-controls="accordion-nested-collapse-body-3">
+                                        <span>Can I use both?</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M9 5 5 1 1 5" />
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-nested-collapse-body-3" class="hidden"
+                                    aria-labelledby="accordion-nested-collapse-heading-3">
+                                    <div class="p-5 border border-gray-200 dark:border-gray-700">
+                                        <p class="mb-2 text-gray-500 dark:text-gray-400">We actually recommend using both
+                                            Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason
+                                            stopping you from using the best of two worlds.</p>
+                                        <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these
+                                            technologies:</p>
+                                        <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                                            <li><a href="https://flowbite.com/pro/"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                                    Pro</a></li>
+                                            <li><a href="https://tailwindui.com/" rel="nofollow"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <h2 id="accordion-nested-collapse-heading-2">
-                                <button type="button"
-                                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-                                    data-accordion-target="#accordion-nested-collapse-body-2" aria-expanded="false"
-                                    aria-controls="accordion-nested-collapse-body-2">
-                                    <span>Architecture</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-nested-collapse-body-2" class="hidden"
-                                aria-labelledby="accordion-nested-collapse-heading-2">
-                                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                                    <p class="text-gray-500 dark:text-gray-400">Another difference is that Flowbite
-                                        relies on smaller and standalone components, whereas Tailwind UI offers sections
-                                        of pages.</p>
-                                </div>
-                            </div>
-                            <h2 id="accordion-nested-collapse-heading-3">
-                                <button type="button"
-                                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
-                                    data-accordion-target="#accordion-nested-collapse-body-3" aria-expanded="false"
-                                    aria-controls="accordion-nested-collapse-body-3">
-                                    <span>Can I use both?</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-nested-collapse-body-3" class="hidden"
-                                aria-labelledby="accordion-nested-collapse-heading-3">
-                                <div class="p-5 border border-gray-200 dark:border-gray-700">
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">We actually recommend using both
-                                        Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason
-                                        stopping you from using the best of two worlds.</p>
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these
-                                        technologies:</p>
-                                    <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                                        <li><a href="https://flowbite.com/pro/"
-                                                class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
-                                                Pro</a></li>
-                                        <li><a href="https://tailwindui.com/" rel="nofollow"
-                                                class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <!-- End: Nested accordion -->
                         </div>
-                        <!-- End: Nested accordion -->
                     </div>
+    
+    
                 </div>
-
-
             </div>
-        </div>
     </section>
     <!--Soru Cevap Alanı Sonu-->
 
-    <!--Özelliklerimiz-->
-    <section class="mx-5 pb-5">
-        <div class="container sm:flex-none md:flex mx-auto gap-5 items-center">
-            <div class="canvas-area">
-                <div id="animation_container">
-                    <canvas id="canvas"></canvas>
-                    <div id="dom_overlay_container"
-                        style="pointer-events:none; overflow:hidden; width:250px; height:250px; position: absolute; left: 0px; top: 0px; display: none;">
-                    </div>
-                </div>
-                <div id='_preload_div_'>
-                    <span style='display: inline-block; height: 100%; vertical-align: middle;'></span> 
-                    <imgsrc=images/_preloader.gif style='vertical-align: middle; max-height: 100%' /></div>
-            </div>
-            <!--Metin Alanı-->
-            <div class="info-alani">
-                <h5>Ihc Olarak Diğer Şirketlerden Farkımız Ne?</h5>
-                <Article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore similique reiciendis, ut
-                    blanditiis tempore nulla aliquid iure vitae suscipit voluptatum, veritatis facere. Optio eligendi
-                    adipisci voluptatem repudiandae veritatis commodi deleniti.</Article>
-            </div>
-
-        </div>
-
-      
-
-    </section>
-    <!--Proje Ortakları Sonu-->
-
     <!--Footer  Başı-->
-    <footer class=" bg-gray-100 text-black mt-10">
+    <footer class="bg-gray-100  mt-10">
         <!-- Footer Top -->
         <div class="border-solid border-b border-gray-200 text-gray-600 mx-auto px-11 py-3">
             <div class="container flex flex-col md:flex-row justify-between items-center mx-auto">
                 <div class="text-xl">
-                    International Hospitality Company
+                    International Hospitality Company - IHC
                 </div>
 
-                <div class="newsletter w-1/5 mx-5 my-5">
+                <div class="newsletter w-1/5 mx-5 my-5 animate-pulse">
                     Şimdi Başvur
                 </div>
             </div>
