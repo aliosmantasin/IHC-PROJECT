@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        isolation: isolate;
+      }
+
+      .cls-6 {
+        filter: url(#luminosity-invert-noclip);
+      }
+
+      .cls-3 {
+        fill: #232447;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="luminosity-invert-noclip" x="-73.33" y="-7.5" width="343.41" height="178.34" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="cm" in2="bg"/>
+    </filter>
+    <mask id="mask" x="-73.33" y="-7.5" width="343.41" height="178.34" maskUnits="userSpaceOnUse">
+      <g class="cls-6">
+        <rect class="cls-2" x="-73.33" y="-7.5" width="343.41" height="177.65"/>
+      </g>
+    </mask>
+  </defs>
+  <rect class="cls-3" width="200" height="200"/>
+  <g>
+    <g class="cls-1">
+      <g class="cls-5">
+        <path class="cls-4" d="m120.3,134.31c-.24-6.06-2.88-11.58-7.32-16.01-1.16-1.17-2.44-2.28-3.82-3.33l-1.64-1.19c-4.98-3.44-11.12-6.18-18.05-8.03v-22.87h19.69v22.39c.48.21.95.44,1.42.67,3.1,1.56,5.91,3.59,8.35,6v-38.45h-39.23v40.27c1.68.32,3.31.68,4.89,1.09,1.61.3,3.24.68,4.88,1.17,2.09.61,4.2,1.38,6.29,2.29,2.14.94,4.16,1.98,6.06,3.13l-.53.45c-6.46,5.21-13.55,6.16-21.56,6.16,0,0-.04,42.27-.04,42.67,0,.27,6.05-.02,6.6-.08,2.54-.3,5.03-.93,7.43-1.81,4.93-1.82,9.44-4.7,13.34-8.21,6.57-5.91,11.89-13.39,13.05-22.32.17-1.35.23-2.68.18-3.98m-30.83,25.34v-22.04c7.7-.68,14.42-4.12,18.71-9.1h0c.26.43,10.01,16.66-18.72,31.14"/>
+      </g>
+    </g>
+    <path class="cls-4" d="m99.89,29.16c-10.71,0-19.39,8.68-19.39,19.39s8.68,19.39,19.39,19.39,19.39-8.68,19.39-19.39-8.68-19.39-19.39-19.39Zm0,28.93c-5.27,0-9.54-4.27-9.54-9.54s4.27-9.54,9.54-9.54,9.54,4.27,9.54,9.54-4.27,9.54-9.54,9.54Z"/>
+  </g>
+</svg>
