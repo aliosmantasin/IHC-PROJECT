@@ -40,7 +40,7 @@ const progressCircle = document.querySelector(".autoplay-progress svg");
 
 var swiper = new Swiper(".mySeceondSwiper", {
   slidesPerView: 1, // Mobilde 1 slide göster
-  spaceBetween: 30,
+  spaceBetween: 0,
   autoplay: false,
   pagination: {
     el: ".swiper-pagination",
@@ -66,6 +66,9 @@ var swiper = new Swiper(".myOrtaklarSwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '" style="background-color: #232445;"></span>';
+    },
   },
   breakpoints: {
     // Büyük ekranlarda 4 slide göster

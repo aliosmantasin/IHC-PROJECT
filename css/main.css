@@ -25,6 +25,24 @@ article {
   --main-gray: #303841;
 }
 
+.main-dark-blue{
+  background-color: #232445;
+}
+
+.main-golden{
+  background-color: #cbbb9f;
+}
+
+.main-white{
+  background-color: #ffffff;
+}
+
+.main-gray{
+  background-color: #303841;
+}
+
+
+
 .bgcolor {
   background-color: var(--main-dark-blue);
 }
@@ -139,24 +157,49 @@ i {
   border-bottom: 2px solid #cbbb9f;
 }
 
+.mySeceondSwiper div:first-child{
+  position: relative;
+}
+
 .swiper {
   width: 100%;
  /* height: 100%;*/
 }
-.swiper-slide{
+ .swiper-slide{
   text-align: center;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.swiper-slide img {
+
+.mySeceondSwiper .swiper-slide:hover svg {
+  opacity: 100%;
+}
+
+
+ .swiper-slide svg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 15px;
+  margin-top: 15px;
+  fill: var(--main-dark-blue);
+  opacity: 45%;
+}
+
+.heads-ihc .swiper-slide img {
   display: block;
   width: 100%;
   height: 90%;
   object-fit: cover;
   border-radius: 20px;
 }
+.swiper-pagination{
+  position: relative;
+  margin-top: 15px;
+}
+
 .autoplay-progress { /**Sayaç Ayarı**/
   position: absolute;
   right: 16px;
@@ -202,6 +245,7 @@ i {
 .step-one {
   width: 275px;
   height: 220px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .step-one h5{
@@ -212,7 +256,7 @@ i {
 .step-one p{
   left: 0;
   bottom: 5px;
-  padding: 10;
+  padding: 10px;
 }
 
 
@@ -233,14 +277,14 @@ i {
 
 .bgabc{
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   left: 0;
-  top: 0;
   border-radius: 16px;
-  width: 5px;
-  height: 100%;
+  width: 3px;
+  height: 60%;
   background: rgb(203, 187, 159);
   background: linear-gradient(90deg, rgba(203, 187, 159, 1) 0%, rgba(203, 187, 159, 1) 12%, rgba(223, 205, 174, 1) 96%);
+ 
 }
 
 /**********************/
