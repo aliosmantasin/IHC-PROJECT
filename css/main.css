@@ -509,6 +509,52 @@ padding: 20px 15px 0;
 
 }
 
+
+.float-wpyaz { /**Whatsap**/
+  position: fixed;
+  width: 176px;
+  height: 32px;
+  bottom: 40px;
+  right: 103px;
+  text-align: center;
+  font-size: 13px;
+  z-index: 100;
+  border-radius: 7px;
+  padding: 2px;
+  padding-top: 5px;
+  background: #fbfbfb;
+  border: 1px solid #e1e1e1;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.float-wp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+
+
+
+
+
+
+
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
  /* .inclusive-right {
     width: 100%;
@@ -519,6 +565,10 @@ padding: 20px 15px 0;
 @media (max-width: 768px) {
   nav div {
     justify-content: space-between;
+  }
+
+  .three-steps .container{
+    padding-bottom:20px;
   }
 
 
