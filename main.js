@@ -35,9 +35,6 @@ const progressCircle = document.querySelector(".autoplay-progress svg");
 
 /**  Initialize Swiper **/
 
-
-
-
 var swiper = new Swiper(".mySeceondSwiper", {
   slidesPerView: 1, // Mobilde 1 slide göster
   spaceBetween: 0,
@@ -77,6 +74,9 @@ var swiper = new Swiper(".myOrtaklarSwiper", {
     },
   },
 });
+
+
+
 
 
 /*************************************************Canvas JS Alanı Başı***/
